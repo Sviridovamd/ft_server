@@ -1,0 +1,20 @@
+docker rm -f $(docker ps -aq)
+docker rmi -f $(docker images -aq)
+
+docker build -t ft_server .
+
+https://www.notion.so/ft_server-by-bscamand-199a43fbd5fd4289b676a9229083fc6f
+https://badcode.ru/docker-tutorial-dlia-novichkov-rassmatrivaiem-docker-tak-iesli-by-on-byl-ighrovoi-pristavkoi/
+
+docker run --rm -it ft_server (docker run -p 80:80 -it ft_server)
+docker run --rm -p 80:80 -p 443:443 -it ft_server
+LEMP
+https://www.digitalocean.com/community/tutorials/how-to-install-linux-nginx-mariadb-php-lemp-stack-on-debian-10
+
+ip addr show eth0 | grep inet | awk '{ print $2; }' | sed 's/\/.*$//'
+
+apt install vim -y
+var /etc/nginx/sites-available/wmadison
+прописать конфиг
+
+https://www.codeflow.site/ru/article/how-to-install-wordpress-with-lemp-nginx-mariadb-and-php-on-debian-10
